@@ -1,2 +1,0 @@
-# HangMan
-Javascript Hangman Game

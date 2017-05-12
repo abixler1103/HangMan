@@ -7,12 +7,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="action.js">
     </script>
-</head>
-
-<body>
-</body>
-
-</html>
+    <title>Hangman</title>
 </head>
 
 <body>
@@ -28,7 +23,9 @@
             <div class="col-md-2">
             </div>
             <div class="col-md-8">
-                <h3>WORDS</h3>
+                <h3>
+                    <div name="game_word" id="game_word"></div>
+                </h3>
             </div>
             <div class="col-md-2">
             </div>
@@ -39,7 +36,9 @@
             <div class="col-md-2">
             </div>
             <div class="col-md-8">
-                <h3># of Guesses</h3>
+                <h3>Remaining Guesses</h3>
+                <div id="num_guesses">
+                </div>
             </div>
             <div class="col-md-2">
             </div>
@@ -53,7 +52,7 @@
                 <div>
                     <h3>Letters Guessed</h3>
                 </div>
-                <div id="guessedletter">
+                <div id="guessed_letters">
                 </div>
             </div>
             <div class="col-md-2">
@@ -64,8 +63,15 @@
         <div class="row5">
             <div class="col-md-12">
                 <p>
-                    <button type="button" class="btn btn-primary btn-lg">New Game</button>
+                    <button type="button" id="btnNewGame" class="btn btn-primary btn-lg" onclick="newGame()">New Game</button>
                 </p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid  bottom_border">
+        <div class="row5">
+            <div class="col-md-12">
+                <img src="bottomborder.jpg">
             </div>
         </div>
     </div>

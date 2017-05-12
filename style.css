@@ -1,12 +1,41 @@
+body {
+    background: #ffdb00;
+}
+
+h2 {
+    font-size: 52px;
+    color: blue;
+    padding: 30px 0;
+}
 .container-fluid {
     width: 50%;
     text-align: center;
 }
 
+
 #title {
     margin-top: 30px;
 }
 
+#game_word {
+    font-size: 24px;
+    color: purple;
+}
+
+#num_guesses {
+    font-size: 24px;
+    color: red;
+}
+
+#guessed_letters {
+    font-size: 26px;
+    color: green;
+}
+
 .btn {
     margin: 20px;
+}
+
+.bottomborder {
+    margin-top: 30px;
 }
